@@ -1,0 +1,170 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+
+
+.menu {
+    background-color: #222;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    z-index: 1;
+
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+/*LARGURA DOS BOTÕES DO MENU*/
+
+.menu ul li {
+    width: 200px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: #0f4ccf;
+}
+
+/*Estilizando o botão menu --> menu hamburguer*/
+
+/*cursor: pointer --> Aparece a "maozinha" ao colocar sobre um link o mouse*/
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: #222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+}
+
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+    z-index: 1;
+}
+
+
+/*Redimencionando*/
+
+@media (max-width: 800px) {
+
+    * {
+        margin: auto;
+    }
+
+    label[for="bt_menu"] {
+        display: block;
+
+    }
+
+    #bt_menu:checked~.menu {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    .menu ul li {
+        width: 100%;
+        float: none;
+
+    }
+
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+
+    }
+}
+
+/*Estilizando a caixa de busca*/
+
+
+
+
+
+#pesquisa {
+    margin: 0;
+
+}
+
+.cx-pesquisa {
+    margin-right: 10px;
+}
+
+
+button .fa-solid {
+    display: absolute;
+    font-size: 20px;
+
+}
+
+form i {
+    color: white;
+}
+
+
+.button-pesquisa {
+    margin-top: 1px;
+    position: relative;
+    padding: 7px 8px;
+    background-color: #cf0f0f;
+
+
+
+}

@@ -1,0 +1,241 @@
+.imagem {
+    min-height: 50vh;
+    background: url(../img/locais/img1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*Nossos Serviços*/
+
+.nossos-servicos {
+    height: 300px;
+    margin-bottom: 40px;
+    background-color: white;
+
+
+}
+
+.nossos-servicos ul {
+
+    background-color: white;
+    list-style: none;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin: 70px;
+    margin-top: 10px;
+
+
+}
+
+.nossos-servicos h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.serv-img {
+    text-align: center;
+    margin-top: 45px;
+
+}
+
+
+@media (max-width: 800px) {
+
+    .nossos-servicos {
+
+        margin-bottom: 560px;
+
+    }
+
+    .nossos-servicos ul {
+
+
+        list-style: none;
+        display: block;
+        gap: 50px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    .nossos-servicos h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-top: 40px;
+        text-align: center;
+
+    }
+
+    .serv-img {
+        text-align: center;
+        margin-top: 45px;
+
+    }
+}
+
+
+
+
+
+
+
+/*Texto - "Paises mais baratos - 2022" */
+
+
+.text-center {
+    margin: 50px;
+}
+
+
+.text-center h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.text-center h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.text-center p {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+@media (max-width: 800px) {
+
+    .text-center {
+        margin: auto 50px;
+    }
+
+
+    .text-center h1 {
+
+        font-size: 40px;
+    }
+
+    .text-center h2 {
+
+        font-size: 25px;
+    }
+
+    .text-center p {
+        text-align: left;
+        font-size: 25px;
+    }
+
+
+    h1#titulo-cont{
+        margin-top: 40px;
+    }
+
+    p#txt-cont{
+        margin-bottom: 50px;
+    }
+}
+
+/*Inserindo a grid imagem e alinhndo */
+
+
+.grid-img {
+    background: rgb(231, 230, 230);
+}
+
+.grid-img ul {
+    background: rgb(231, 230, 230);
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    margin: 50px;
+
+
+}
+
+
+.grid-img img {
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, .5);
+    margin: 10px;
+
+
+}
+
+.grid-img ul h4 {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.grid-img li p {
+
+    font-size: 18px;
+}
+
+
+
+.grid-img ul p {
+    text-align: center;
+
+
+}
+
+@media (max-width: 800px) {
+
+    .grid-img {
+        display: flex;
+        margin: auto;
+
+    }
+
+    .grid-img ul {
+        background: rgb(231, 230, 230);
+        list-style: none;
+        display: block;
+
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .grid-img img {
+        padding: 10px;
+        border: 2px solid rgba(0, 0, 0, .5);
+        margin: 10px;
+
+
+    }
+
+    .grid-img ul h4 {
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    .grid-img li p {
+
+        font-size: 18px;
+    }
+
+
+
+    .grid-img ul p {
+        text-align: center;
+
+
+    }
+}
